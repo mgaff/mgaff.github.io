@@ -1,0 +1,62 @@
+body {
+  text-align: center;
+  background-image: url("Background_1.jpg");
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+.blog-masthead {
+  font-size: 28px;
+}
+
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  color: #cdddeb;
+}
+
+.blog-nav-item:hover {
+  color: #fff;
+}
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 35px;
+
+}
+
+.blog-title {
+
+}
+
+.blog-post-meta {
+  font-size: 20px;
+}
+
+.container {
+  margin: auto;
+  width: 60%;
+}
+
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: #eee;
+}
+
+.sidetext{
+  margin-top: 150px;
+}
