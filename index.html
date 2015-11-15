@@ -6,15 +6,13 @@
     <title>Max's Blog</title>
 
   
-    <link rel="stylesheet" type="text/css" href="blogstyle.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 
   
   </head>
 
   <body>
-    <div class="sidebar">
-      <h5 class="sidetext"> Maxwell Gaffney</h5>
-    </div>
+    
 
     <div class="blog-masthead">
       <div class="container">
@@ -41,8 +39,25 @@
         <div class="col-sm-8 blog-main">
 
           <div class="blog-post">
-            <h2 class="blog-post-title">First Blog Post</h2>
-            <p class="blog-post-meta">October 24, 2015</p>
+            <h2 class="blog-post-title">Simple Modal Window - Don't let your dreams be dreams</h2>
+            <p class="blog-post-meta">As my first blog post I would like to highlight something which
+            I was very happy to have accomplished.  While its no towering technical feat, creating a nice
+            looking modal window (not sure if thats what its called) was something that, only a 
+            few months ago, seemed to be completely out of reach.  So, without any further ado, I bring you 
+            my simple yet effective approach for taming this mighty foe. </p>
+
+            <p class="blog-post-meta">First things first.  We are going to need a few CDNs to get the ball rolling. Specifically
+            Angular, Angular-animate, and the Anguluar UI BootStrap.  So go ahead and copy those over.</p>
+
+            <p class="blog-post-meta">Next, in the angular controller responsible for whatever element you are going to want to start this task off of, we are going to create a function that will allow the modal instance to open.  Here's my code. INSERT SCREEN SHOT HERE.  Thanks to the guys at angular and bootstrap, these 3 lines of code is all it takes to get the ball rolling.  All we need to do is instruct the uibModalInstance to open, and then assign a templateUrl where we will place our html/javascript that will be seen in the window, and then assign a controller that will have authority over it </p>
+
+            <p class="blog-post-meta">
+              As for the templateURL, what we are going to want to do here is create a script element where type = text/ng-template.  This allows angular to process it so it can be used for ngView, ngInclude, or in this case, our uibModalInstance.  We can now treat everything inside that script tag as if it were an html document.</p>
+
+            <p class="blog-post-meta">
+            Last thing we are going to do here is create a function that will allow the modal to be closed. What I did was simply create a button that when clicked, will trigger a function that was declared inside the controller we specificed when we opened the modal instance.  We simply call "$uibModalInstance.close();" and we are done.</p>
+
+
           </div>
 
           <div class="blog-post">
